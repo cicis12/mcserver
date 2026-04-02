@@ -19,7 +19,7 @@
      */
     "penetratingStrikeIgnorance": 0.33,
     "soaringWindsEnabled": true,
-    // Range: 0,1 - 3
+    // Range: 0.1 - 3
     "soaringWindsBoost": 0.75,
     "tunnelingEnabled": true,
     // Only mines the Block below if the Tool used is effective for the Block mined (e.g. Shovel on Stone).
@@ -45,7 +45,7 @@
     // Range: 1 - 90
     "radianceTotemRadius": 10,
     "torrentTotemEnabled": true,
-    // Range: 0,1 - 3
+    // Range: 0.1 - 3
     "torrentTotemBoost": 1.0,
     "torrentTotemUpwardsBoost": false,
     "soulTotemEnabled": true,

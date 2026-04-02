@@ -1,89 +1,859 @@
-[01Apr2026 17:18:39.981] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.neoForgeVersion, 21.1.219, --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430]
-[01Apr2026 17:18:39.983] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Red Hat, Inc. OpenJDK 64-Bit Server VM 21.0.9+10
-[01Apr2026 17:18:39.984] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.9 by Red Hat, Inc.; OS Linux arch amd64 version 6.17.10-100.fc41.x86_64
-[01Apr2026 17:18:40.066] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
-[01Apr2026 17:18:40.108] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/home/marcel/Documents/mcserwerpzdr/libraries/net/fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/sponge-mixin-0.15.2+mixin.0.8.7.jar%2373!/ Service=ModLauncher Env=SERVER
-[01Apr2026 17:18:40.334] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "server-1.21.1-20240808.144430-srg.jar" [locator: production server provider +net.neoforged:neoforge:21.1.219:server]
-[01Apr2026 17:18:40.352] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.219-universal.jar" [locator: PathBasedLocator[name=neoforge, paths=[libraries/net/neoforged/neoforge/21.1.219/neoforge-21.1.219-universal.jar]], reader: mod manifest]
-[01Apr2026 17:18:40.448] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[01Apr2026 17:18:40.448] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "mixinextras-neoforge-0.5.0.jar" [parent: neoforge-21.1.219-universal.jar, locator: jarinjar, reader: mod manifest]
-[01Apr2026 17:18:40.448] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "net.neoforged.neoforge-coremods-21.1.219.jar" [parent: neoforge-21.1.219-universal.jar, locator: jarinjar, reader: mod manifest]
-[01Apr2026 17:18:40.449] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+[02Apr2026 08:34:14.008] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.neoForgeVersion, 21.1.219, --fml.fmlVersion, 4.0.42, --fml.mcVersion, 1.21.1, --fml.neoFormVersion, 20240808.144430]
+[02Apr2026 08:34:14.009] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Red Hat, Inc. OpenJDK 64-Bit Server VM 21.0.9+10
+[02Apr2026 08:34:14.011] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.9 by Red Hat, Inc.; OS Linux arch amd64 version 6.17.10-100.fc41.x86_64
+[02Apr2026 08:34:14.278] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[02Apr2026 08:34:14.322] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/home/marcel/Documents/mcserwerpzdr/libraries/net/fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/sponge-mixin-0.15.2+mixin.0.8.7.jar%2373!/ Service=ModLauncher Env=SERVER
+[02Apr2026 08:34:14.496] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "server-1.21.1-20240808.144430-srg.jar" [locator: production server provider +net.neoforged:neoforge:21.1.219:server]
+[02Apr2026 08:34:14.514] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "neoforge-21.1.219-universal.jar" [locator: PathBasedLocator[name=neoforge, paths=[libraries/net/neoforged/neoforge/21.1.219/neoforge-21.1.219-universal.jar]], reader: mod manifest]
+[02Apr2026 08:34:14.528] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "[1.21.1] SecurityCraft v1.10.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.532] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "accessories-neoforge-1.1.0-beta.53+1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.536] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "advancednetherite-neoforge-2.3.1-1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.540] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "another_furniture-neoforge-4.0.2.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.542] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "appleskin-neoforge-mc1.21-3.0.8.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.544] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "architectury-13.0.8-neoforge.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.546] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "athena-neoforge-1.21-4.0.2.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.548] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "balm-neoforge-1.21.1-21.0.56.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.551] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "betterarcheology-neoforge-1.21.1-1.3.4.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.553] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "brassworksmissions-1.12.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.555] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "BuildingWands-neoforge-MC1.21.1-3.0.2.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.557] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "camera-neoforge-1.21.1-1.0.21.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.559] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "carryon-neoforge-1.21.1-2.2.4.4.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.561] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "chat_heads-0.15.0-neoforge-1.21.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.577] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "chipped-neoforge-1.21.1-4.0.2.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.586] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "chisel-neoforge-2.0.0+mc1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.587] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "Chunky-NeoForge-1.4.23.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.589] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "cloth-config-15.0.140-neoforge.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.590] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "Clumps-neoforge-1.21.1-19.0.0.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.592] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "copycats-3.0.4+mc.1.21.1-neoforge.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.599] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "create-1.21.1-6.0.9.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.601] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "create-dragons-plus-1.8.7.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.603] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "create-enchantment-industry-2.3.0.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.605] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "create-stones-2.0.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.608] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "create_pattern_schematics-2.0.10.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.609] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "create_power_loader-2.0.3-mc1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.611] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "create_structures_arise-174.47.46 Release-neoforge-1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.615] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "create_train_parts-0.3.6-1.21.1-6.0.9-216.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.618] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "createaddition-1.5.10.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.620] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "createcontraptionterminals-1.21-1.3.0.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.624] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "createdeco-2.1.2-1.21.1-neo.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.626] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "createenderlink-1.4.1+mc1.21.1-neoforge.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.628] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "createendertransmission-2.1.1-1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.630] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "createliquidfuel-2.1.1-1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.632] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "CreateNumismatics-1.0.19+neoforge-mc1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.634] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "createrailwaysnavigator-neoforge-1.21.1-alpha-0.9.0-C6+2.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.636] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "CreativeCore_NEOFORGE_v2.13.36_mc1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.637] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "cryonicconfig-neoforge-1.0.0+mc1.21.11.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.652] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "DistantHorizons-2.4.5-b-1.21.1-fabric-neoforge.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.654] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "DnDesires-1.21.1-2.2d-BETA.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.656] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "dragonlib-neoforge-1.21.1-beta-3.0.24.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.662] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "ferritecore-7.0.3-neoforge.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.663] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "gravestone-neoforge-1.21.1-1.0.35.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.664] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "immersive_aircraft-1.4.3+1.21.1-neoforge.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.667] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "interiors-1.21.1-neoforge-0.6.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.669] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "iris-neoforge-1.8.12+mc1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.671] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "Jade-1.21.1-NeoForge-15.10.5.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.673] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "jei-1.21.1-neoforge-19.27.0.340.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.674] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "justenoughbreeding-neoforge-1.21-1.21.1-1.6.2.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.675] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "justzoom_neoforge_2.1.0_MC_1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.677] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "konkrete_neoforge_1.9.9_MC_1.21.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.679] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "kotlinforforge-5.11.0-all.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.680] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "lambdynamiclights-4.8.7+1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.682] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "letsdo-vinery-neoforge-1.5.3.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.683] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "lithium-neoforge-0.15.3+mc1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.685] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "lootr-neoforge-1.21.1-1.11.37.118.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.687] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mcw-bridges-3.1.2-mc1.21.1neoforge.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.688] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mcw-doors-1.1.5-mc1.21.1neoforge.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.689] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mcw-mcwfences-1.2.1-mc1.21.1neoforge.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.691] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "mcw-mcwwindows-2.4.2-mc1.21.1neoforge.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.692] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "modelfix-1.21-1.10.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.694] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "modernfix-neoforge-5.26.1+mc1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.696] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "NaturesCompass-1.21.1-3.0.3-neoforge.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.697] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "nightlights-neoforge-1.3.0.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.698] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "NoChatReports-NEOFORGE-1.21.1-v2.9.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.700] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.702] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "polymorph-neoforge-1.1.0+1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.703] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "resourcefulconfig-neoforge-1.21-3.0.11.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.704] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "resourcefullib-neoforge-1.21-3.0.12.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.705] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "servercore-neoforge-1.5.10+1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.707] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "simplehats-neoforge-1.21.1-0.4.0.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.708] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "sit-1.21.1-1.4.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.710] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "sodium-neoforge-0.6.13+mc1.21.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.712] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "Terralith_1.21.x_v2.5.8.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.714] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "toms_storage-1.21-2.3.0.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.715] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "trainutilities-neoforge-3.0.3.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.716] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "trashslot-neoforge-1.21.1-21.1.4.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.717] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "travelersbackpack-neoforge-1.21.1-10.1.33.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.719] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "voicechat-neoforge-1.21.1-2.6.12.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.720] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "waterframes-NEOFORGE-mc1.21.1-v2.1.22.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.721] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "watervision-NF-mc1.21.1-v0.1.0-alpha.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.723] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "waystones-neoforge-1.21.1-21.1.29.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.724] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "xaerominimap-neoforge-1.21.1-25.3.10.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.726] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "xaeroworldmap-neoforge-1.21.1-1.40.11.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.727] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "YungsApi-1.21.1-NeoForge-5.1.6.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.728] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "YungsBetterDesertTemples-1.21.1-NeoForge-4.1.5.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.729] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "YungsBetterDungeons-1.21.1-NeoForge-5.1.4.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.730] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "YungsBetterEndIsland-1.21.1-NeoForge-3.1.2.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.731] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "YungsBetterJungleTemples-1.21.1-NeoForge-3.1.2.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.732] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "YungsBetterMineshafts-1.21.1-NeoForge-5.1.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.733] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "YungsBetterNetherFortresses-1.21.1-NeoForge-3.1.5.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.734] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "YungsBetterOceanMonuments-1.21.1-NeoForge-4.1.2.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.735] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "YungsBetterStrongholds-1.21.1-NeoForge-5.1.3.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.737] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "YungsBetterWitchHuts-1.21.1-NeoForge-4.1.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:14.738] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "YungsBridges-1.21.1-NeoForge-5.1.1.jar" [locator: {mods folder locator at /home/marcel/Documents/mcserwerpzdr/mods}, reader: mod manifest]
+[02Apr2026 08:34:15.252] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: dragonlib. Using Mod File: /home/marcel/Documents/mcserwerpzdr/mods/dragonlib-neoforge-1.21.1-beta-3.0.24.jar
+[02Apr2026 08:34:15.252] [main/WARN] [net.neoforged.jarjar.selection.JarSelector/]: Attempted to select a dependency jar for JarJar which was passed in as source: architectury. Using Mod File: /home/marcel/Documents/mcserwerpzdr/mods/architectury-13.0.8-neoforge.jar
+[02Apr2026 08:34:15.252] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 46 dependencies adding them to mods collection
+[02Apr2026 08:34:15.252] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "mixinextras-neoforge-0.5.0.jar" [parent: neoforge-21.1.219-universal.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.252] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "dazzleconf-ext-snakeyaml-1.3.0-M2.jar" [parent: servercore-neoforge-1.5.10+1.21.1.jar, locator: jarinjar]
+[02Apr2026 08:34:15.252] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "yumi-commons-core-1.0.0.jar" [parent: lambdynamiclights-api-4.8.7+1.21.1-mojmap.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.252] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "kuma-api-neoforge-21.0.7+1.21.jar" [parent: balm-neoforge-1.21.1-21.0.56.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "gson-0.1.5.1.jar" [parent: owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar, locator: jarinjar]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-renderer-api-v1-3.4.0+acb05a3919.jar" [parent: iris-neoforge-1.8.12+mc1.21.1.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-api-base-0.4.42+d1308dedd1.jar" [parent: owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "jankson-0.1.5.1.jar" [parent: owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar, locator: jarinjar]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "ponder-neoforge-1.0.81+mc1.21.1.jar" [parent: create-1.21.1-6.0.9.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "net.neoforged.neoforge-coremods-21.1.219.jar" [parent: neoforge-21.1.219-universal.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "thedarkcolour.kfflang-5.11.0.jar" [parent: kotlinforforge-5.11.0-all.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "xaerolib-neoforge-1.21.1-1.1.0.jar" [parent: xaerominimap-neoforge-1.21.1-25.3.10.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "thedarkcolour.kfflib-5.11.0.jar" [parent: kotlinforforge-5.11.0-all.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "forgeconfigapiport-neoforge-21.1.1.jar" [parent: dragonlib-neoforge-1.21.1-beta-3.0.23.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "jcpp-1.4.14.jar" [parent: iris-neoforge-1.8.12+mc1.21.1.jar, locator: jarinjar]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "thedarkcolour.kffmod-5.11.0.jar" [parent: kotlinforforge-5.11.0-all.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "kotlin-stdlib-2.3.0.jar" [parent: kotlinforforge-5.11.0-all.jar, locator: jarinjar]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "kotlin-reflect-2.3.0.jar" [parent: kotlinforforge-5.11.0-all.jar, locator: jarinjar]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "yumi-commons-collections-1.0.0.jar" [parent: lambdynamiclights-api-4.8.7+1.21.1-mojmap.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "flywheel-neoforge-1.21.1-1.0.6.jar" [parent: create-1.21.1-6.0.9.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "netty-0.1.4.1.jar" [parent: owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar, locator: jarinjar]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "endec-0.1.8.1.jar" [parent: owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar, locator: jarinjar]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "kotlinx-coroutines-core-jvm-1.10.2.jar" [parent: kotlinforforge-5.11.0-all.jar, locator: jarinjar]
+[02Apr2026 08:34:15.253] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "spruceui-6.2.5+1.21.1-mojmap.jar" [parent: lambdynamiclights-4.8.7+1.21.1-neoforge.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "glsl-transformer-2.0.1.jar" [parent: iris-neoforge-1.8.12+mc1.21.1.jar, locator: jarinjar]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-block-view-api-v2-1.0.10+9afaaf8c19.jar" [parent: sodium-neoforge-0.6.13+mc1.21.1.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "yabn-1.0.3.jar" [parent: resourcefullib-neoforge-1.21-3.0.12.jar, locator: jarinjar]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "yumi-mc-foundation-1.0.0-beta.1+1.21.1-mojmap.jar" [parent: lambdynamiclights-4.8.7+1.21.1-neoforge.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "net.caffeinemc.sodium-neoforge-0.6.13+mc1.21.1-service.jar" [parent: sodium-neoforge-0.6.13+mc1.21.1.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "kotlinx-coroutines-jdk8-1.10.2.jar" [parent: kotlinforforge-5.11.0-all.jar, locator: jarinjar]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "MathParser.org-mXparser-5.2.1.jar" [parent: immersive_aircraft-1.4.3+1.21.1-neoforge.jar, locator: jarinjar]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "lambdynamiclights-api-4.8.7+1.21.1-mojmap.jar" [parent: lambdynamiclights-4.8.7+1.21.1-neoforge.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "yumi-commons-event-1.0.0.jar" [parent: lambdynamiclights-api-4.8.7+1.21.1-mojmap.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "lambdynamiclights-4.8.7+1.21.1-neoforge.jar" [parent: lambdynamiclights-4.8.7+1.21.1.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "conditional-mixin-neoforge-0.6.4.jar" [parent: create-dragons-plus-1.8.7.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "kotlin-stdlib-jdk7-2.3.0.jar" [parent: kotlinforforge-5.11.0-all.jar, locator: jarinjar]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "kotlin-stdlib-jdk8-2.3.0.jar" [parent: kotlinforforge-5.11.0-all.jar, locator: jarinjar]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "dazzleconf-core-1.3.0-M2.jar" [parent: servercore-neoforge-1.5.10+1.21.1.jar, locator: jarinjar]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "fabric-rendering-data-attachment-v1-0.3.48+73761d2e19.jar" [parent: sodium-neoforge-0.6.13+mc1.21.1.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "kotlinx-serialization-core-jvm-1.9.0.jar" [parent: kotlinforforge-5.11.0-all.jar, locator: jarinjar]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found gamelibrary file "Registrate-MC1.21-1.3.0+67.jar" [parent: create-1.21.1-6.0.9.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found mod file "pridelib-1.2.4+1.21.1-mojmap.jar" [parent: lambdynamiclights-4.8.7+1.21.1-neoforge.jar, locator: jarinjar, reader: mod manifest]
+[02Apr2026 08:34:15.254] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "bytecodecs-1.1.2.jar" [parent: resourcefullib-neoforge-1.21-3.0.12.jar, locator: jarinjar]
+[02Apr2026 08:34:15.255] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "kotlinx-serialization-json-jvm-1.9.0.jar" [parent: kotlinforforge-5.11.0-all.jar, locator: jarinjar]
+[02Apr2026 08:34:15.255] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "snakeyaml-2.3.jar" [parent: servercore-neoforge-1.5.10+1.21.1.jar, locator: jarinjar]
+[02Apr2026 08:34:15.255] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/SCAN]: Found library file "jankson-1.2.2.jar" [parent: owo-lib-neoforge-0.12.15.5-beta.1+1.21.jar, locator: jarinjar]
+[02Apr2026 08:34:15.258] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
      Mod List:
 		Name Version (Mod Id)
 
+		[Let's Do] Vinery 1.5.3 (vinery)
+		Accessories 1.1.0-beta.53+1.21.1 (accessories)
+		Advanced Netherite 2.3.1 (advancednetherite)
+		Another Furniture 4.0.2 (another_furniture)
+		AppleSkin 3.0.8+mc1.21 (appleskin)
+		Architectury 13.0.8 (architectury)
+		Athena 4.0.2 (athena)
+		Balm 21.0.56 (balm)
+		Better Archeology 1.21.1-1.3.4 (betterarcheology)
+		Building Wands 3.0.2 (wands)
+		Camera Mod 1.21.1-1.0.21 (camera)
+		Carry On 2.2.4 (carryon)
+		Chat Heads 0.15.0 (chat_heads)
+		Chipped 4.0.2 (chipped)
+		Chisel Reborn 2.0.0+mc1.21.1 (chisel)
+		Chunky 1.4.23 (chunky)
+		Cloth Config v15 API 15.0.140 (cloth_config)
+		Clumps 19.0.0.1 (clumps)
+		conditional mixin 0.6.4 (conditional_mixin)
+		Create 6.0.9 (create)
+		Create Brassworks Missions 1.12 (brassworksmissions)
+		Create Contraption Terminals 0.0NONE (createcontraptionterminals)
+		Create Crafts & Additions 1.5.10 (createaddition)
+		Create Deco 2.1.2 (createdeco)
+		Create Ender Transmission 2.1.1-1.21.1 (createendertransmission)
+		Create Liquid Fuel 2.1.1-1.21.1 (createliquidfuel)
+		Create Railways Navigator 1.21.1-alpha-0.9.0-C6 (createrailwaysnavigator)
+		Create Train Parts 0.3.6 (create_train_parts)
+		Create Train Utilities 3.0.3 (trainutilities)
+		Create: Copycats+ 3.0.4+mc.1.21.1-neoforge (copycats)
+		Create: Dragons Plus 1.8.7 (create_dragons_plus)
+		Create: Dreams n' Desires 2.2d-BETA (dndesires)
+		Create: Enchantment Industry 2.3.0 (create_enchantment_industry)
+		Create: Ender Link 1.4.1 (createenderlink)
+		Create: Interiors 0.6.1 (interiors)
+		Create: Numismatics 1.0.19+neoforge-mc1.21.1 (numismatics)
+		Create: Pattern Schematics 2.0.10 (create_pattern_schematics)
+		Create: Power Loader 2.0.3-mc1.21.1 (create_power_loader)
+		Create: Stones 2.0.1 (mr_create_stones)
+		Create: Structures Arise 174.47.46 (create_structures_arise)
+		CreativeCore 2.13.36 (creativecore)
+		Cryonic Config 1.0.0+mc1.21.11 (cryonicconfig)
+		Distant Horizons 2.4.5-b (distanthorizons)
+		DragonLib 1.21.1-beta-3.0.24 (dragonlib)
+		Ferrite Core 7.0.3 (ferritecore)
+		Flywheel 1.0.6 (flywheel)
+		Forge Config API Port 21.1.1 (forgeconfigapiport)
+		Forgified Fabric API Base 0.4.42+d1308dedd1 (fabric_api_base)
+		Forgified Fabric BlockView API (v2) 1.0.10+9afaaf8c19 (fabric_block_view_api_v2)
+		Forgified Fabric Renderer API (v1) 3.4.0+acb05a3919 (fabric_renderer_api_v1)
+		Forgified Fabric Rendering Data Attachment (v1) 0.3.48+73761d2e19 (fabric_rendering_data_attachment_v1)
+		Gravestone Mod 1.21.1-1.0.35 (gravestone)
+		Immersive Aircraft 1.4.3+1.21.1 (immersive_aircraft)
+		Iris 1.8.12-snapshot+mc1.21.1-local (iris)
+		Jade 15.10.5+neoforge (jade)
+		Just Enough Breeding 1.6.2 (justenoughbreeding)
+		Just Enough Items 19.27.0.340 (jei)
+		Just Zoom 2.1.0 (justzoom)
+		Konkrete 1.9.9 (konkrete)
+		Kotlin For Forge 5.11.0 (kotlinforforge)
+		KumaAPI 21.0.7 (kuma_api)
+		LambDynamicLights 4.8.7+1.21.1 (lambdynlights)
+		LambDynamicLights (API) 4.8.7+1.21.1 (lambdynlights_api)
+		LambDynamicLights (Runtime) 4.8.7+1.21.1 (lambdynlights_runtime)
+		Lithium 0.15.3+mc1.21.1 (lithium)
+		Lootr 1.21.1-1.11.37.118 (lootr)
+		Macaw's Bridges 3.1.2 (mcwbridges)
+		Macaw's Doors 1.1.5 (mcwdoors)
+		Macaw's Fences and Walls 1.2.1 (mcwfences)
+		Macaw's Windows 2.4.2 (mcwwindows)
 		Minecraft 1.21.1 (minecraft)
+		Model Gap Fix 1.21-1.10 (modelfix)
+		ModernFix 5.26.1+mc1.21.1 (modernfix)
+		Nature's Compass 1.21.1-3.0.2-neoforge (naturescompass)
 		NeoForge 21.1.219 (neoforge)
-[01Apr2026 17:18:40.817] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
-[01Apr2026 17:18:41.615] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
-[01Apr2026 17:18:45.458] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.219, for MC 1.21.1
-[01Apr2026 17:18:45.703] [main/ERROR] [net.minecraft.server.dedicated.Settings/]: Failed to load properties from file: server.properties
-java.nio.file.NoSuchFileException: server.properties
-	at java.base/sun.nio.fs.UnixException.translateToIOException(UnixException.java:92) ~[?:?]
-	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:106) ~[?:?]
-	at java.base/sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:111) ~[?:?]
-	at java.base/sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:261) ~[?:?]
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:380) ~[?:?]
-	at java.base/java.nio.file.Files.newByteChannel(Files.java:432) ~[?:?]
-	at java.base/java.nio.file.spi.FileSystemProvider.newInputStream(FileSystemProvider.java:420) ~[?:?]
-	at java.base/java.nio.file.Files.newInputStream(Files.java:160) ~[?:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.dedicated.Settings.loadFromFile(Settings.java:38) ~[server-1.21.1-20240808.144430-srg.jar%23117!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.dedicated.DedicatedServerProperties.fromFile(DedicatedServerProperties.java:132) ~[server-1.21.1-20240808.144430-srg.jar%23117!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.dedicated.DedicatedServerSettings.<init>(DedicatedServerSettings.java:12) ~[server-1.21.1-20240808.144430-srg.jar%23117!/:?]
-	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.Main.main(Main.java:125) ~[server-1.21.1-20240808.144430-srg.jar%23117!/:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:136) ~[loader-4.0.42.jar%2359!/:4.0]
-	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.serverService(CommonLaunchHandler.java:128) ~[loader-4.0.42.jar%2359!/:4.0]
-	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonServerLaunchHandler.runService(CommonServerLaunchHandler.java:32) ~[loader-4.0.42.jar%2359!/:4.0]
-	at MC-BOOTSTRAP/fml_loader@4.0.42/net.neoforged.fml.loading.targets.CommonLaunchHandler.lambda$launchService$4(CommonLaunchHandler.java:118) ~[loader-4.0.42.jar%2359!/:4.0]
-	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:30) [modlauncher-11.0.5.jar%2364!/:?]
-	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:53) [modlauncher-11.0.5.jar%2364!/:?]
-	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:71) [modlauncher-11.0.5.jar%2364!/:?]
-	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.run(Launcher.java:103) [modlauncher-11.0.5.jar%2364!/:?]
-	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.Launcher.main(Launcher.java:74) [modlauncher-11.0.5.jar%2364!/:?]
-	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) [modlauncher-11.0.5.jar%2364!/:?]
-	at MC-BOOTSTRAP/cpw.mods.modlauncher@11.0.5/cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) [modlauncher-11.0.5.jar%2364!/:?]
-	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.run(BootstrapLauncher.java:210) [bootstraplauncher-2.0.2.jar:?]
-	at cpw.mods.bootstraplauncher@2.0.2/cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:69) [bootstraplauncher-2.0.2.jar:?]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at net.neoforged.serverstarterjar.Main.mainLaunch(Main.java:297) [server.jar:0.1.34]
-	at net.neoforged.serverstarterjar.Main.main(Main.java:76) [server.jar:0.1.34]
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
-	at net.neoforged.serverstarterjar.Main8.main(Main8.java:19) [server.jar:0.1.34]
-[01Apr2026 17:18:45.733] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[01Apr2026 17:18:45.774] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/marcel/Documents/mcserwerpzdr/libraries/net/minecraft/server/1.21.1-20240808.144430/server-1.21.1-20240808.144430-srg.jar%23117!/assets/.mcassetsroot' uses unexpected schema
-[01Apr2026 17:18:45.774] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/marcel/Documents/mcserwerpzdr/libraries/net/minecraft/server/1.21.1-20240808.144430/server-1.21.1-20240808.144430-srg.jar%23117!/data/.mcassetsroot' uses unexpected schema
-[01Apr2026 17:18:46.321] [main/INFO] [net.minecraft.server.Main/]: No existing world data, creating new world
-[01Apr2026 17:18:46.834] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1290 recipes
-[01Apr2026 17:18:46.981] [main/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
-[01Apr2026 17:18:47.791] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.21.1
-[01Apr2026 17:18:47.791] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
-[01Apr2026 17:18:47.791] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
-[01Apr2026 17:18:47.792] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[01Apr2026 17:18:47.925] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
-[01Apr2026 17:18:47.960] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
-[01Apr2026 17:18:48.024] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
-[01Apr2026 17:18:50.475] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[01Apr2026 17:18:50.501] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
-[01Apr2026 17:18:50.987] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
-[01Apr2026 17:18:51.478] [Worker-Main-9/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
-[01Apr2026 17:18:51.977] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 18%
-[01Apr2026 17:18:52.478] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 18%
-[01Apr2026 17:18:53.004] [Worker-Main-8/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
-[01Apr2026 17:18:53.479] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
-[01Apr2026 17:18:53.799] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 3324 ms
-[01Apr2026 17:18:53.800] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (5.802s)! For help, type "help"
-[01Apr2026 17:18:53.826] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[01Apr2026 17:18:53.834] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[01Apr2026 17:18:53.835] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[01Apr2026 17:18:53.835] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[01Apr2026 17:18:58.704] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
-[01Apr2026 17:18:59.006] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
-[01Apr2026 17:18:59.015] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
-[01Apr2026 17:18:59.033] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
-[01Apr2026 17:18:59.033] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[01Apr2026 17:18:59.033] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[01Apr2026 17:18:59.034] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+		Night Lights 1.3.0 (nightlights)
+		No Chat Reports 1.21.1-v2.9.1 (nochatreports)
+		oωo 0.12.15.5-beta.1+1.21 (owo)
+		Polymorph 1.1.0+1.21.1 (polymorph)
+		Ponder 1.0.81+mc1.21.1 (ponder)
+		Pride Lib 1.2.4+1.21.1 (pride)
+		Resourceful Lib 3.0.12 (resourcefullib)
+		Resourcefulconfig 3.0.11 (resourcefulconfig)
+		SecurityCraft 1.10.1 (securitycraft)
+		ServerCore 1.5.10+1.21.1 (servercore)
+		Simple Voice Chat 1.21.1-2.6.12 (voicechat)
+		SimpleHats 0.4.0 (simplehats)
+		Sit 1.4 (sit)
+		Sodium 0.6.13+mc1.21.1 (sodium)
+		SpruceUI 6.2.5+1.21.1 (spruceui)
+		Terralith 2.5.8 (terralith)
+		Tom's Simple Storage Mod 2.3.0 (toms_storage)
+		TrashSlot 21.1.4 (trashslot)
+		Traveler's Backpack 10.1.33 (travelersbackpack)
+		WaterFrames 2.1.22 (waterframes)
+		WaterVision 0.1.0-alpha (watervision)
+		Waystones 21.1.29 (waystones)
+		Xaero's Minimap 25.3.10 (xaerominimap)
+		Xaero's World Map 1.40.11 (xaeroworldmap)
+		XaeroLib 1.1.0 (xaerolib)
+		Yumi Minecraft Libraries: Foundation 1.0.0-beta.1+1.21.1 (yumi_mc_core)
+		YUNG's API 1.21.1-NeoForge-5.1.6 (yungsapi)
+		YUNG's Better Desert Temples 1.21.1-NeoForge-4.1.5 (betterdeserttemples)
+		YUNG's Better Dungeons 1.21.1-NeoForge-5.1.4 (betterdungeons)
+		YUNG's Better End Island 1.21.1-NeoForge-3.1.2 (betterendisland)
+		YUNG's Better Jungle Temples 1.21.1-NeoForge-3.1.2 (betterjungletemples)
+		YUNG's Better Mineshafts 1.21.1-NeoForge-5.1.1 (bettermineshafts)
+		YUNG's Better Nether Fortresses 1.21.1-NeoForge-3.1.5 (betterfortresses)
+		YUNG's Better Ocean Monuments 1.21.1-NeoForge-4.1.2 (betteroceanmonuments)
+		YUNG's Better Strongholds 1.21.1-NeoForge-5.1.3 (betterstrongholds)
+		YUNG's Better Witch Huts 1.21.1-NeoForge-4.1.1 (betterwitchhuts)
+		YUNG's Bridges 1.21.1-NeoForge-5.1.1 (yungsbridges)
+[02Apr2026 08:34:15.288] [main/ERROR] [net.neoforged.fml.loading.moddiscovery.ModFile/LOADING]: Access transformer file META-INF/accesstransformer.cfg provided by mod pride does not exist!
+[02Apr2026 08:34:15.567] [main/INFO] [net.neoforged.fml.loading.FMLServiceProvider/CORE]: Loading coremod script-engine for [xaeroworldmap, xaerominimap]
+[02Apr2026 08:34:16.766] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[02Apr2026 08:34:16.768] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[02Apr2026 08:34:16.882] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments []
+[02Apr2026 08:34:16.900] [main/WARN] [mixin/]: Reference map 'betterdungeons.refmap.json' for betterdungeons.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:16.901] [main/WARN] [mixin/]: Reference map 'kuma_api.refmap.json' for kuma_api.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:16.902] [main/WARN] [mixin/]: Reference map 'betterwitchhuts.refmap.json' for betterwitchhuts.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:16.902] [main/WARN] [mixin/]: Reference map 'betteroceanmonuments.refmap.json' for betteroceanmonuments.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:16.905] [main/WARN] [mixin/]: Reference map 'xaeroworldmap.refmap.json' for xaeroworldmap.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:16.955] [main/INFO] [ModernFix/]: Loaded configuration file for ModernFix 5.26.1+mc1.21.1: 78 options available, 0 override(s) found
+[02Apr2026 08:34:16.956] [main/INFO] [ModernFix/]: Applying Nashorn fix
+[02Apr2026 08:34:16.957] [main/WARN] [mixin/]: Reference map 'modernfix.refmap.json' for modernfix-modernfix.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:16.958] [main/WARN] [mixin/]: Reference map 'yungsapi.refmap.json' for yungsapi.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:16.959] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:16.960] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.fantastic.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:16.960] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.vertexformat.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:16.961] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for iris-batched-entity-rendering.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:16.961] [main/WARN] [mixin/]: Reference map 'iris.refmap.json' for mixins.iris.compat.sodium.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:16.965] [main/WARN] [mixin/]: Reference map 'balm.refmap.json' for balm.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.038] [main/WARN] [mixin/]: Reference map 'carryon.refmap.json' for carryon.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.040] [main/WARN] [mixin/]: Reference map '' for chat_heads.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.041] [main/WARN] [mixin/]: Reference map 'betterfortresses.refmap.json' for betterfortresses.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.042] [main/WARN] [mixin/]: Reference map 'konkrete.refmap.json' for konkrete.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.043] [main/WARN] [mixin/]: Reference map 'konkrete.refmap.json' for konkrete.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.043] [main/WARN] [mixin/]: Reference map 'yungsbridges.refmap.json' for yungsbridges.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.102] [main/WARN] [mixin/]: Reference map 'betterstrongholds.refmap.json' for betterstrongholds.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.103] [main/WARN] [mixin/]: Reference map 'watervision.mixin-refmap.json' for watervision.mixin.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.103] [main/WARN] [mixin/]: Reference map 'brassworksmissions.refmap.json' for brassworksmissions.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.105] [main/WARN] [mixin/]: Reference map '' for accessories-common.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.106] [main/WARN] [mixin/]: Reference map '' for accessories-forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.107] [main/WARN] [mixin/]: Reference map 'CreateLiquidFuel.refmap.json' for createliquidfuel.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.135] [main/WARN] [mixin/]: Reference map 'betterendisland.refmap.json' for betterendisland.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.136] [main/WARN] [mixin/]: Reference map 'bettermineshafts.refmap.json' for bettermineshafts.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.136] [main/WARN] [mixin/]: Reference map 'betterjungletemples.refmap.json' for betterjungletemples.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.136] [main/WARN] [mixin/]: Reference map 'trashslot.refmap.json' for trashslot.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.153] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.suffocation' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.suffocation=false'.
+[02Apr2026 08:34:17.153] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.block_support' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.block_support=false'.
+[02Apr2026 08:34:17.154] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching.block_touching' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching.block_touching=false'.
+[02Apr2026 08:34:17.154] [main/INFO] [LithiumConfig/]: Option 'mixin.experimental.entity.block_caching' requires 'mixin.util.block_tracking=true' but found 'false'. Setting 'mixin.experimental.entity.block_caching=false'.
+[02Apr2026 08:34:17.154] [main/INFO] [Lithium/]: Loaded configuration file for Lithium: 148 options available, 0 override(s) found
+[02Apr2026 08:34:17.157] [main/WARN] [mixin/]: Reference map 'xaerolib.refmap.json' for xaerolib.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.157] [main/WARN] [mixin/]: Reference map 'waystones.refmap.json' for waystones.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.158] [main/WARN] [mixin/]: Reference map 'clumps.refmap.json' for clumps.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.158] [main/WARN] [mixin/]: Reference map 'travelersbackpack.mixins.refmap.json' for META-INF/travelersbackpack.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.158] [main/WARN] [mixin/]: Reference map 'betterdeserttemples.refmap.json' for betterdeserttemples.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.166] [main/INFO] [Sodium/]: Loaded configuration file for Sodium: 43 options available, 1 override(s) found
+[02Apr2026 08:34:17.168] [main/WARN] [mixin/]: Reference map 'nochatreports.refmap.json' for mixins/common/nochatreports.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.171] [main/WARN] [mixin/]: Reference map 'creativecore.mixins.refmap.json' for creativecore.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.171] [main/WARN] [mixin/]: Reference map 'creativecore.mixins.refmap.json' for creativecore.forge.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.176] [main/WARN] [mixin/]: Reference map 'ponder.refmap.json' for ponder-common.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.176] [main/WARN] [mixin/]: Reference map 'dndesires.refmap.json' for dndesires.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.182] [main/WARN] [mixin/]: Reference map 'xaerominimap.refmap.json' for xaerohud.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.182] [main/WARN] [mixin/]: Reference map 'xaerominimap.refmap.json' for xaerominimap.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.183] [main/WARN] [mixin/]: Reference map 'polymorph.refmap.json' for polymorph.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.184] [main/WARN] [mixin/]: Reference map 'polymorph.refmap.json' for polymorph-compatibility.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.185] [main/WARN] [mixin/]: Reference map 'securitycraft.refmap.json' for securitycraft.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.202] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.predicates.mixin.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.203] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.fastmap.mixin.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.204] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.mrl.mixin.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.204] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.dedupmultipart.mixin.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.205] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.blockstatecache.mixin.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.206] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.dedupbakedquad.mixin.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.206] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.threaddetec.mixin.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.207] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.modelsides.mixin.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.207] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.datacomponents.mixin.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.208] [main/WARN] [mixin/]: Reference map '${refmap_target}refmap.json' for ferritecore.accessors.mixin.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.209] [main/WARN] [mixin/]: Reference map 'create_power_loader.refmap.json' for create_power_loader.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.210] [main/WARN] [mixin/]: Reference map 'justzoom.refmap.json' for justzoom.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.211] [main/WARN] [mixin/]: Reference map 'justzoom.refmap.json' for justzoom.neoforge.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.212] [main/WARN] [mixin/]: Reference map 'camera.refmap.json' for camera.mixins.json could not be read. If this is a development environment you can ignore this message
+[02Apr2026 08:34:17.704] [main/WARN] [mixin/]: Error loading class: me/jellysquid/mods/lithium/common/ai/pathing/PathNodeDefaults (java.lang.ClassNotFoundException: me.jellysquid.mods.lithium.common.ai.pathing.PathNodeDefaults)
+[02Apr2026 08:34:18.161] [main/WARN] [mixin/]: Error loading class: org/jetbrains/annotations/ApiStatus$ScheduledForRemoval (java.lang.ClassNotFoundException: org.jetbrains.annotations.ApiStatus$ScheduledForRemoval)
+[02Apr2026 08:34:18.279] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.0).
+[02Apr2026 08:34:19.122] [main/INFO] [net.minecraft.server.Bootstrap/]: ModernFix reached bootstrap stage (6.271 s after launch)
+[02Apr2026 08:34:20.449] [main/WARN] [mixin/]: Method overwrite conflict for getTemperature in lithium.mixins.json:world.temperature_cache.BiomeMixin from mod lithium, previously written by org.embeddedt.modernfix.common.mixin.perf.remove_biome_temperature_cache.BiomeMixin. Skipping method.
+[02Apr2026 08:34:22.465] [main/WARN] [mixin/]: Discarding @Unique public method onLoad in copycats-common.mixins.json:foundation.copycat.CopycatBlockEntityMixin from mod copycats because it already exists in com.simibubi.create.content.decoration.copycat.CopycatBlockEntity
+[02Apr2026 08:34:23.184] [main/INFO] [dev.yumi.mc.core.impl.YumiFoundationMod/]: Initializing mods (entrypoint yumi:init)...
+[02Apr2026 08:34:23.239] [main/INFO] [net.minecraft.server.Bootstrap/]: Vanilla bootstrap took 4115 milliseconds
+[02Apr2026 08:34:23.384] [modloading-worker-0/INFO] [Create: Numismatics/]: Create: Numismatics 1.0.19+neoforge-mc1.21.1 initializing! Create version: 6.0.9 on platform: NEOFORGE
+[02Apr2026 08:34:23.385] [modloading-worker-0/INFO] [Create Deco/]: Registering items for Create Deco
+[02Apr2026 08:34:23.386] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.219, for MC 1.21.1
+[02Apr2026 08:34:23.386] [modloading-worker-0/INFO] [Create: Numismatics/]: Registering creative tabs for Create: Numismatics
+[02Apr2026 08:34:23.390] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: [KONKRETE] Loading v1.9.9 in server-side mode on NEOFORGE!
+[02Apr2026 08:34:23.390] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: ---------------------------
+[02Apr2026 08:34:23.390] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: KONKRETE SHIPS AND USES THE FOLLOWING LIBRARIES:
+[02Apr2026 08:34:23.390] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]:  
+[02Apr2026 08:34:23.390] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: Open Imaging Copyright © 2014 Dhyan Blum.
+[02Apr2026 08:34:23.390] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: Open Imaging is licensed under Apache-2.0.
+[02Apr2026 08:34:23.390] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]:  
+[02Apr2026 08:34:23.390] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: JsonPath Copyright © 2017 Jayway.
+[02Apr2026 08:34:23.391] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: JsonPath is licensed under Apache-2.0.
+[02Apr2026 08:34:23.391] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]:  
+[02Apr2026 08:34:23.391] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: Json-smart Copyright © netplex.
+[02Apr2026 08:34:23.391] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: Json-smart is licensed under Apache-2.0.
+[02Apr2026 08:34:23.391] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]:  
+[02Apr2026 08:34:23.391] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: Exp4j Copyright © Frank Asseg.
+[02Apr2026 08:34:23.391] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: Exp4j is licensed under Apache-2.0. https://github.com/fasseg/exp4j
+[02Apr2026 08:34:23.391] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: ---------------------------
+[02Apr2026 08:34:23.391] [modloading-worker-0/INFO] [de.keksuccino.konkrete.Konkrete/]: [KONKRETE] Server-side modules initialized and ready to use!
+[02Apr2026 08:34:23.415] [modloading-worker-0/INFO] [Create: Numismatics/]: Registering items for Create: Numismatics
+[02Apr2026 08:34:23.440] [modloading-worker-0/INFO] [com.autovw.advancednetherite.AdvancedNetherite/]: Initializing platform helper for Advanced Netherite!
+[02Apr2026 08:34:23.467] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Registering common data for channel xaeroworldmap:main!
+[02Apr2026 08:34:23.489] [modloading-worker-0/INFO] [Create Deco/]: Registering blocks for Create Deco
+[02Apr2026 08:34:23.510] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Loading primary common config for channel xaeroworldmap:main!
+[02Apr2026 08:34:23.510] [modloading-worker-0/INFO] [Create: Numismatics/]: Registering block entities for Create: Numismatics
+[02Apr2026 08:34:23.510] [modloading-worker-0/INFO] [Create: Numismatics/]: Registering blocks for Create: Numismatics
+[02Apr2026 08:34:23.512] [modloading-worker-0/INFO] [xaero.map.WorldMap/]: Loading server config profiles for channel xaeroworldmap:main!
+[02Apr2026 08:34:23.515] [modloading-worker-0/INFO] [owo/]: Snakes are inherently funny
+[02Apr2026 08:34:23.516] [modloading-worker-0/INFO] [Create Deco/]: Populating connected texture maps...
+[02Apr2026 08:34:23.521] [modloading-worker-0/INFO] [me.wesley1808.servercore.common.ServerCore/]: [ServerCore] Loaded V1.5.10+1.21.1!
+[02Apr2026 08:34:23.523] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.sliding_door.CopycatSlidingDoorBlock
+[02Apr2026 08:34:23.523] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.sliding_door.CopycatSlidingDoorBlock
+[02Apr2026 08:34:23.523] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.sliding_door.CopycatSlidingDoorBlock
+[02Apr2026 08:34:23.523] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.sliding_door.CopycatSlidingDoorBlock
+[02Apr2026 08:34:23.540] [modloading-worker-0/INFO] [Create: Numismatics/]: Registering menu types for Create: Numismatics
+[02Apr2026 08:34:23.540] [modloading-worker-0/INFO] [Create: Numismatics/]: Registering block tags for Create: Numismatics
+[02Apr2026 08:34:23.541] [modloading-worker-0/INFO] [Create: Numismatics/]: Registering item tags for Create: Numismatics
+[02Apr2026 08:34:23.541] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Registering common data for channel xaerolib:main!
+[02Apr2026 08:34:23.542] [modloading-worker-0/INFO] [Create: Numismatics/]: Registering data components for Create: Numismatics
+[02Apr2026 08:34:23.543] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.door.CopycatDoorBlock
+[02Apr2026 08:34:23.543] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.door.CopycatDoorBlock
+[02Apr2026 08:34:23.543] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.door.CopycatDoorBlock
+[02Apr2026 08:34:23.543] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.door.CopycatDoorBlock
+[02Apr2026 08:34:23.555] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading primary common config for channel xaerolib:main!
+[02Apr2026 08:34:23.556] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading server config profiles for channel xaerolib:main!
+[02Apr2026 08:34:23.571] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fluid_pipe.CopycatGlassFluidPipeBlock
+[02Apr2026 08:34:23.571] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fluid_pipe.CopycatGlassFluidPipeBlock
+[02Apr2026 08:34:23.571] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fluid_pipe.CopycatGlassFluidPipeBlock
+[02Apr2026 08:34:23.571] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fluid_pipe.CopycatGlassFluidPipeBlock
+[02Apr2026 08:34:23.590] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.multistate.MultiStateCopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.foundation.copycat.multistate.MultiStateCopycatBlock
+[02Apr2026 08:34:23.590] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.multistate.MultiStateCopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.foundation.copycat.multistate.MultiStateCopycatBlock
+[02Apr2026 08:34:23.590] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.multistate.MultiStateCopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.foundation.copycat.multistate.MultiStateCopycatBlock
+[02Apr2026 08:34:23.590] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.multistate.MultiStateCopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.foundation.copycat.multistate.MultiStateCopycatBlock
+[02Apr2026 08:34:23.644] [modloading-worker-0/INFO] [net.blay09.mods.balm.neoforge.config.NeoForgeBalmConfig/]: Registering config for trashslot:common (COMMON) with 5 properties.
+[02Apr2026 08:34:23.687] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.foundation.copycat.CCCopycatBlock
+[02Apr2026 08:34:23.687] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.foundation.copycat.CCCopycatBlock
+[02Apr2026 08:34:23.688] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.foundation.copycat.CCCopycatBlock
+[02Apr2026 08:34:23.688] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.foundation.copycat.CCCopycatBlock
+[02Apr2026 08:34:23.729] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Registering common data for channel xaerominimap:main!
+[02Apr2026 08:34:23.741] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.button.CopycatButtonBlock
+[02Apr2026 08:34:23.741] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.button.CopycatButtonBlock
+[02Apr2026 08:34:23.741] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.button.CopycatButtonBlock
+[02Apr2026 08:34:23.741] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.button.CopycatButtonBlock
+[02Apr2026 08:34:23.742] [modloading-worker-0/INFO] [SimpleHats/]: Loaded 293 hat entries from simplehats.json
+[02Apr2026 08:34:23.777] [modloading-worker-0/INFO] [net.blay09.mods.balm.neoforge.config.NeoForgeBalmConfig/]: Registering config for waystones:common (COMMON) with 34 properties.
+[02Apr2026 08:34:23.802] [modloading-worker-0/WARN] [de.keksuccino.justzoom.JustZoom/]: [JUST ZOOM] Disabling 'Just Zoom' since it's a client-side mod and current environment is server!
+[02Apr2026 08:34:23.805] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fence.CopycatFenceBlock
+[02Apr2026 08:34:23.805] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fence.CopycatFenceBlock
+[02Apr2026 08:34:23.805] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fence.CopycatFenceBlock
+[02Apr2026 08:34:23.805] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fence.CopycatFenceBlock
+[02Apr2026 08:34:23.824] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fence_gate.CopycatFenceGateBlock
+[02Apr2026 08:34:23.824] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fence_gate.CopycatFenceGateBlock
+[02Apr2026 08:34:23.824] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fence_gate.CopycatFenceGateBlock
+[02Apr2026 08:34:23.824] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fence_gate.CopycatFenceGateBlock
+[02Apr2026 08:34:23.875] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.ladder.CopycatLadderBlock
+[02Apr2026 08:34:23.875] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.ladder.CopycatLadderBlock
+[02Apr2026 08:34:23.875] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.ladder.CopycatLadderBlock
+[02Apr2026 08:34:23.875] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.ladder.CopycatLadderBlock
+[02Apr2026 08:34:23.878] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'get_station_tag' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:23.892] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Loading primary common config for channel xaerominimap:main!
+[02Apr2026 08:34:23.892] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'get_station_tag_by_tag' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:23.895] [modloading-worker-0/INFO] [xaero.common.HudMod/]: Loading server config profiles for channel xaerominimap:main!
+[02Apr2026 08:34:23.896] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'create_station_tag' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:23.900] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'update_station_tag_permissions' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:23.901] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.pressure_plate.CopycatPressurePlateBlock
+[02Apr2026 08:34:23.901] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.pressure_plate.CopycatPressurePlateBlock
+[02Apr2026 08:34:23.901] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.pressure_plate.CopycatPressurePlateBlock
+[02Apr2026 08:34:23.901] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.pressure_plate.CopycatPressurePlateBlock
+[02Apr2026 08:34:23.958] [modloading-worker-0/INFO] [thedarkcolour.kotlinforforge.neoforge.test.KotlinForForge/]: Kotlin For Forge Enabled!
+[02Apr2026 08:34:23.966] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.pressure_plate.CopycatWeightedPressurePlate
+[02Apr2026 08:34:23.966] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.pressure_plate.CopycatWeightedPressurePlate
+[02Apr2026 08:34:23.966] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.pressure_plate.CopycatWeightedPressurePlate
+[02Apr2026 08:34:23.967] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.pressure_plate.CopycatWeightedPressurePlate
+[02Apr2026 08:34:23.979] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'add_station_tag_entry' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:23.981] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'update_station_tag_entry' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:23.983] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'remove_station_tag_entry' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:23.984] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'get_all_stations_as_station_tags' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:23.985] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'get_train_category' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:23.987] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.stairs.CopycatStairsBlock
+[02Apr2026 08:34:23.987] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.stairs.CopycatStairsBlock
+[02Apr2026 08:34:23.987] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.stairs.CopycatStairsBlock
+[02Apr2026 08:34:23.987] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.stairs.CopycatStairsBlock
+[02Apr2026 08:34:23.999] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'update_train_category_name' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.001] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'create_train_category' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.003] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'update_train_category_permissions' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.004] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.trapdoor.CopycatTrapdoorBlock
+[02Apr2026 08:34:24.004] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.trapdoor.CopycatTrapdoorBlock
+[02Apr2026 08:34:24.004] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.trapdoor.CopycatTrapdoorBlock
+[02Apr2026 08:34:24.004] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.trapdoor.CopycatTrapdoorBlock
+[02Apr2026 08:34:24.018] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'add_station_to_blacklist' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.024] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'remove_station_from_blacklist' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.025] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'add_train_to_blacklist' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.026] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.wall.CopycatWallBlock
+[02Apr2026 08:34:24.026] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.wall.CopycatWallBlock
+[02Apr2026 08:34:24.027] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.wall.CopycatWallBlock
+[02Apr2026 08:34:24.027] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.wall.CopycatWallBlock
+[02Apr2026 08:34:24.042] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'remove_train_from_blacklist' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.043] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'update_realtime' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.082] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'get_user_settings' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.084] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.shaft.CopycatShaftBlock
+[02Apr2026 08:34:24.084] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'get_nearest_station' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.084] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.shaft.CopycatShaftBlock
+[02Apr2026 08:34:24.085] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.shaft.CopycatShaftBlock
+[02Apr2026 08:34:24.085] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.shaft.CopycatShaftBlock
+[02Apr2026 08:34:24.098] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'get_train_display_data' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.099] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'get_next_connections_display_data' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.100] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'get_train_line' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.101] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'update_train_line_name' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.102] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.multistate.MultiStateCopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.cogwheel.CopycatCogWheelBlock
+[02Apr2026 08:34:24.102] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.multistate.MultiStateCopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.cogwheel.CopycatCogWheelBlock
+[02Apr2026 08:34:24.102] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.multistate.MultiStateCopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.cogwheel.CopycatCogWheelBlock
+[02Apr2026 08:34:24.102] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.multistate.MultiStateCopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.cogwheel.CopycatCogWheelBlock
+[02Apr2026 08:34:24.152] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'create_train_line' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.153] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'update_train_line_permissions' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.155] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'navigate' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.165] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'get_departure_and_arrival_routes_at' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.166] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'get_departures_at' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.166] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fluid_pipe.CopycatFluidPipeBlock
+[02Apr2026 08:34:24.166] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fluid_pipe.CopycatFluidPipeBlock
+[02Apr2026 08:34:24.167] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fluid_pipe.CopycatFluidPipeBlock
+[02Apr2026 08:34:24.167] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fluid_pipe.CopycatFluidPipeBlock
+[02Apr2026 08:34:24.174] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'get_station_departure_history' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.178] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'register_station_tag' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.179] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'delete_station_tag' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.180] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'update_station_tag_name' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.180] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'delete_train_category' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.181] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'update_train_category_color' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.182] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'delete_train_line' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.182] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'update_train_line_color' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.182] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.pane.CopycatPaneBlock
+[02Apr2026 08:34:24.182] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.pane.CopycatPaneBlock
+[02Apr2026 08:34:24.182] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.pane.CopycatPaneBlock
+[02Apr2026 08:34:24.183] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useWithoutItem in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.pane.CopycatPaneBlock
+[02Apr2026 08:34:24.186] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'save_user_settings' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.187] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND with id 'train_soft_reset' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.188] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND with id 'train_hard_reset' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.190] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND with id 'advanced_display_update_packet' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.190] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND with id 'teleport_player' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.191] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type RECEIVE with id 'get_all_station_tags' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.192] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type RECEIVE with id 'get_all_train_categories' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.192] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type RECEIVE with id 'get_all_train_lines' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.193] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type RECEIVE with id 'get_all_blacklisted_stations' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.193] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method onLoad in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockEntityMixin from mod copycats because it already exists in com.copycatsplus.copycats.foundation.copycat.CCCopycatBlockEntity
+[02Apr2026 08:34:24.195] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type RECEIVE with id 'get_all_blacklisted_trains' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.196] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method onLoad in copycats-neoforge.mixins.json:foundation.copycat.multistate.MultiStateCopycatBlockEntityMixin from mod copycats because it already exists in com.copycatsplus.copycats.foundation.copycat.multistate.MultiStateCopycatBlockEntity
+[02Apr2026 08:34:24.197] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type RECEIVE with id 'get_all_train_names' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.198] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type RECEIVE with id 'get_all_station_names' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.198] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type RECEIVE with id 'all_trains_initialized' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.199] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type RECEIVE with id 'get_all_trains_debug_data' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.199] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type RECEIVE with id 'get_online_players' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.200] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method onLoad in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockEntityMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.shaft.CopycatShaftBlockEntity
+[02Apr2026 08:34:24.201] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering S2C network packet of type SEND with id 'show_train_debug_screen' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.201] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering S2C network packet of type SEND with id 'server_error' in 'createrailwaysnavigator:network'.
+[02Apr2026 08:34:24.202] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method onLoad in copycats-neoforge.mixins.json:foundation.copycat.multistate.MultiStateCopycatBlockEntityMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.cogwheel.CopycatCogWheelBlockEntity
+[02Apr2026 08:34:24.204] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method onLoad in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockEntityMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fluid_pipe.CopycatFluidPipeBlockEntity
+[02Apr2026 08:34:24.206] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method onLoad in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockEntityMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.fluid_pipe.CopycatStraightPipeBlockEntity
+[02Apr2026 08:34:24.208] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method onLoad in copycats-neoforge.mixins.json:foundation.copycat.CopycatBlockEntityMixin from mod copycats because it already exists in com.copycatsplus.copycats.content.copycat.sliding_door.CopycatSlidingDoorBlockEntity
+[02Apr2026 08:34:24.253] [modloading-worker-0/INFO] [com.simibubi.create.Create/]: Create 6.0.9 initializing! Commit hash: e2de2b9a02406ec33ff6d8851ed6f0b56240b6ec
+[02Apr2026 08:34:24.257] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND with id 'update_writable_sign' in 'dragonlib:network'.
+[02Apr2026 08:34:24.262] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND with id 'string_message' in 'dragonlib:network_test'.
+[02Apr2026 08:34:24.263] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND_AND_RECEIVE with id 'test_msg' in 'dragonlib:network_test'.
+[02Apr2026 08:34:24.263] [modloading-worker-0/INFO] [DragonLib/]: Starting the setup of DragonLib...
+[02Apr2026 08:34:24.266] [Mountain Dragon/INFO] [DragonLib/]:                              +++ 🐉 +++                             
+[02Apr2026 08:34:24.266] [Mountain Dragon/INFO] [DragonLib/]: ---------------------------------------------------------------------
+[02Apr2026 08:34:24.266] [Mountain Dragon/INFO] [DragonLib/]:           Loaded DragonLib v1.21.1-beta-3.0.24 by MrJulsen!          
+[02Apr2026 08:34:24.266] [Mountain Dragon/INFO] [DragonLib/]:                   Minecraft NeoForge Server 1.21.1                  
+[02Apr2026 08:34:24.266] [Mountain Dragon/INFO] [DragonLib/]: 
+[02Apr2026 08:34:24.267] [Mountain Dragon/INFO] [DragonLib/]:                 Discord: https://discord.mrjulsen.net                
+[02Apr2026 08:34:24.267] [Mountain Dragon/INFO] [DragonLib/]:                        Documentation: unknown                       
+[02Apr2026 08:34:24.267] [Mountain Dragon/INFO] [DragonLib/]:   Bug Reports: https://github.com/MisterJulsen/MC-DragonLib2/issues  
+[02Apr2026 08:34:24.267] [Mountain Dragon/INFO] [DragonLib/]: ---------------------------------------------------------------------
+[02Apr2026 08:34:24.267] [Mountain Dragon/INFO] [DragonLib/]:                              +++ 🐉 +++                             
+[02Apr2026 08:34:24.530] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-common.mixins.json:copycat.step.CopycatStepBlockMixin from mod copycats because it already exists in com.simibubi.create.content.decoration.copycat.CopycatStepBlock
+[02Apr2026 08:34:24.536] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method useItemOn in copycats-common.mixins.json:copycat.panel.CopycatPanelBlockMixin from mod copycats because it already exists in com.simibubi.create.content.decoration.copycat.CopycatPanelBlock
+[02Apr2026 08:34:24.536] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method mirror in copycats-common.mixins.json:copycat.panel.CopycatPanelBlockMixin from mod copycats because it already exists in com.simibubi.create.content.decoration.copycat.CopycatPanelBlock
+[02Apr2026 08:34:24.536] [modloading-worker-0/WARN] [mixin/]: Discarding @Unique public method rotate in copycats-common.mixins.json:copycat.panel.CopycatPanelBlockMixin from mod copycats because it already exists in com.simibubi.create.content.decoration.copycat.CopycatPanelBlock
+[02Apr2026 08:34:24.574] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND with id 'send_platform_packet' in 'trainutilities:trainutilities_network'.
+[02Apr2026 08:34:24.575] [modloading-worker-0/INFO] [DragonLib Networking System/]: Registering C2S network packet of type SEND with id 'send_change_door_sound_packet' in 'trainutilities:trainutilities_network'.
+[02Apr2026 08:34:24.598] [modloading-worker-0/INFO] [nightlights/]: Initializing Night Lights
+[02Apr2026 08:34:24.600] [modloading-worker-0/INFO] [nightlights/]: Registering blocks
+[02Apr2026 08:34:24.601] [modloading-worker-0/INFO] [nightlights/]: Registering items
+[02Apr2026 08:34:24.602] [modloading-worker-0/INFO] [nightlights/]: Registering creative tab
+[02Apr2026 08:34:24.609] [modloading-worker-0/INFO] [net.minecraft.server.LoggedPrintStream/]: [STDOUT]: Config updated!
+[02Apr2026 08:34:24.609] [modloading-worker-0/INFO] [net.minecraft.server.LoggedPrintStream/]: [STDOUT]: Config loaded!
+[02Apr2026 08:34:24.638] [modloading-worker-0/INFO] [Better Archeology/]: Registering Worldgen/structure Types for Better Archeology
+[02Apr2026 08:34:24.638] [modloading-worker-0/INFO] [Better Archeology/]: Registering Entity Types for Better Archeology
+[02Apr2026 08:34:24.638] [modloading-worker-0/INFO] [Better Archeology/]: Registering Enchantments for Better Archeology
+[02Apr2026 08:34:24.639] [modloading-worker-0/INFO] [Better Archeology/]: Registering Creative Mode Tabs for Better Archeology
+[02Apr2026 08:34:24.641] [modloading-worker-0/INFO] [Better Archeology/]: Registering Items for Better Archeology
+[02Apr2026 08:34:24.677] [modloading-worker-0/INFO] [Better Archeology/]: Registering Blocks for Better Archeology
+[02Apr2026 08:34:24.677] [modloading-worker-0/INFO] [Better Archeology/]: Registering Tags for Better Archeology
+[02Apr2026 08:34:24.678] [modloading-worker-0/INFO] [Better Archeology/]: Registering Block Entity Types for Better Archeology
+[02Apr2026 08:34:24.680] [modloading-worker-0/INFO] [Better Archeology/]: Registering Menus for Better Archeology
+[02Apr2026 08:34:24.680] [modloading-worker-0/INFO] [Better Archeology/]: Registering Recipe Serializers for Better Archeology
+[02Apr2026 08:34:24.681] [modloading-worker-0/INFO] [Better Archeology/]: Registering Recipe Types for Better Archeology
+[02Apr2026 08:34:24.682] [modloading-worker-0/INFO] [Better Archeology/]: Registering Villager Professions for Better Archeology
+[02Apr2026 08:34:24.684] [modloading-worker-0/INFO] [Better Archeology/]: Registering Events for Better Archeology
+[02Apr2026 08:34:24.684] [modloading-worker-0/INFO] [Better Archeology/]: Registering Sound Events for Better Archeology
+[02Apr2026 08:34:25.040] [modloading-worker-0/INFO] [net.minecraft.server.LoggedPrintStream/]: [STDOUT]: Registering DnDesires Data Components...
+[02Apr2026 08:34:25.040] [modloading-worker-0/INFO] [Create: Interiors/]: Create: Interiors v0.6.1 initializing! Create version: 6.0.9 on platform: NeoForge
+[02Apr2026 08:34:25.040] [modloading-worker-0/INFO] [net.minecraft.server.LoggedPrintStream/]: [STDOUT]: Registering DnDesires Creative Tabs...
+[02Apr2026 08:34:25.040] [modloading-worker-0/INFO] [net.minecraft.server.LoggedPrintStream/]: [STDOUT]: Registering DnDesires Damage Types...
+[02Apr2026 08:34:25.040] [modloading-worker-0/INFO] [net.minecraft.server.LoggedPrintStream/]: [STDOUT]: Registering DnDesires Mob Effects...
+[02Apr2026 08:34:25.040] [modloading-worker-0/INFO] [net.minecraft.server.LoggedPrintStream/]: [STDOUT]: Registering DnDesires Particles...
+[02Apr2026 08:34:25.040] [modloading-worker-0/INFO] [net.minecraft.server.LoggedPrintStream/]: [STDOUT]: Registering DnDesires Recipes Serializers...
+[02Apr2026 08:34:25.040] [modloading-worker-0/INFO] [net.minecraft.server.LoggedPrintStream/]: [STDOUT]: Registering DnDesires Recipes...
+[02Apr2026 08:34:25.040] [modloading-worker-0/INFO] [net.minecraft.server.LoggedPrintStream/]: [STDOUT]: Registering DnDesires Menus...
+[02Apr2026 08:34:25.040] [modloading-worker-0/INFO] [net.minecraft.server.LoggedPrintStream/]: [STDOUT]: Registering DnDesires Sounds...
+[02Apr2026 08:34:25.040] [modloading-worker-0/INFO] [net.minecraft.server.LoggedPrintStream/]: [STDOUT]: Registering DnDesires Dimensions...
+[02Apr2026 08:34:25.040] [modloading-worker-0/INFO] [net.minecraft.server.LoggedPrintStream/]: [STDOUT]: Registering DnDesires Done
+[02Apr2026 08:34:26.777] [modloading-sync-worker/INFO] [SimpleHats/]: Generated 293 hat items from hat entries.
+[02Apr2026 08:34:27.489] [modloading-sync-worker/INFO] [com.tom.storagemod.StorageMod/]: Loaded Tom's Simple Storage config file toms_storage-common.toml
+[02Apr2026 08:34:27.523] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading XaeroLib common 1/2!
+[02Apr2026 08:34:27.523] [modloading-worker-0/INFO] [com.tom.storagemod.StorageMod/]: Tom's Storage Setup starting
+[02Apr2026 08:34:27.523] [modloading-worker-0/INFO] [de.mrjulsen.crn.CreateRailwaysNavigator/]: Welcome to the CREATE RAILWAYS NAVIGATOR mod by MRJULSEN.
+[02Apr2026 08:34:27.524] [modloading-worker-0/INFO] [com.tom.createterminal.CreateTerminals/]: Create Contraption Terminals starting
+[02Apr2026 08:34:27.524] [modloading-worker-0/INFO] [net.nicguzzo.wands.WandsMod/]: Has opac!! false
+[02Apr2026 08:34:27.524] [modloading-worker-0/INFO] [net.nicguzzo.wands.WandsMod/]: Has ftbchunks!! false
+[02Apr2026 08:34:27.524] [modloading-worker-0/INFO] [net.nicguzzo.wands.WandsMod/]: Has flan!! false
+[02Apr2026 08:34:27.525] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mcwwindows] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/window.json
+[02Apr2026 08:34:27.526] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Compatibility version 20
+[02Apr2026 08:34:27.548] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Loading plugins
+[02Apr2026 08:34:27.553] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Loaded 0 plugin(s)
+[02Apr2026 08:34:27.553] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Initializing plugins
+[02Apr2026 08:34:27.553] [modloading-worker-0/INFO] [voicechat/]: [voicechat] Initialized 0 plugin(s)
+[02Apr2026 08:34:27.568] [modloading-sync-worker/INFO] [com.tiviacz.travelersbackpack.TravelersBackpack/]: Registered the FluidEffect with Unique ID of minecraft:water for Water (Fluid Amount Required: 1000) with the ID 0
+[02Apr2026 08:34:27.568] [modloading-sync-worker/INFO] [com.tiviacz.travelersbackpack.TravelersBackpack/]: Registered the FluidEffect with Unique ID of minecraft:lava for Lava (Fluid Amount Required: 1000) with the ID 1
+[02Apr2026 08:34:27.568] [modloading-sync-worker/INFO] [com.tiviacz.travelersbackpack.TravelersBackpack/]: Registered the FluidEffect with Unique ID of travelersbackpack:potion for item.minecraft.potion.effect.empty.effect.empty (Fluid Amount Required: 250) with the ID 2
+[02Apr2026 08:34:27.569] [modloading-sync-worker/INFO] [com.tiviacz.travelersbackpack.TravelersBackpack/]: Registered the FluidEffect with Unique ID of minecraft:milk for Milk (Fluid Amount Required: 1000) with the ID 3
+[02Apr2026 08:34:27.601] [modloading-worker-0/INFO] [xaero.lib.XaeroLib/]: Loading XaeroLib server 1/2!
+[02Apr2026 08:34:27.601] [modloading-worker-0/INFO] [xaero.map.server.WorldMapServer/]: Loading Xaero's World Map - Stage 1/2 (Server)
+[02Apr2026 08:34:27.601] [modloading-worker-0/INFO] [xaero.minimap.XaeroMinimap/]: Loading Xaero's Minimap - Stage 1/2 (Server)
+[02Apr2026 08:34:27.603] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.AbstractModInitializer/]: Initializing Distant Horizons server, firing DhApiBeforeDhInitEvent event...
+[02Apr2026 08:34:27.614] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.Initializer/]: Running library validation...
+[02Apr2026 08:34:27.661] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mcwwindows] Found status: UP_TO_DATE Current: 2.4.2 Target: null
+[02Apr2026 08:34:27.662] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_create_stones] Starting version check at https://api.modrinth.com/updates/KKlx33Ch/forge_updates.json?neoforge=only
+[02Apr2026 08:34:27.771] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.Initializer/]: Garbage collectors: [G1 Young Generation, G1 Concurrent GC, G1 Old Generation]
+[02Apr2026 08:34:27.773] [modloading-worker-0/WARN] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.Initializer/]: Distant Horizons: G1 Garbage collector detected. 
+This garbage collector can cause FPS stuttering. 
+It's recommended to use a concurrent garbage collector 
+like ZGC (Java 21+) or Shenandoah (Java 8 through 17) for a smoother experience. 
+
+[02Apr2026 08:34:27.778] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.AbstractModInitializer/]: Distant Horizons, Version: 2.4.5-b
+[02Apr2026 08:34:27.791] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.AbstractModInitializer/]: Skipping mod compatibility accessor for: [optifine]
+[02Apr2026 08:34:27.791] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.AbstractModInitializer/]: Skipping mod compatibility accessor for: [c2me]
+[02Apr2026 08:34:27.792] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.dependencyInjection.ModAccessorInjector/]: Registered mod compatibility accessor for: [iris].
+[02Apr2026 08:34:27.792] [modloading-worker-0/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.AbstractModInitializer/]: Distant Horizons server Initialized, adding event subscribers...
+[02Apr2026 08:34:27.794] [modloading-sync-worker/INFO] [xaero.lib.XaeroLib/]: Loading XaeroLib common 2/2!
+[02Apr2026 08:34:27.794] [modloading-sync-worker/INFO] [xaero.lib.XaeroLib/]: Loading XaeroLib server 2/2!
+[02Apr2026 08:34:27.795] [modloading-sync-worker/INFO] [xaero.map.server.WorldMapServer/]: Loading Xaero's World Map - Stage 2/2 (Server)
+[02Apr2026 08:34:27.795] [modloading-sync-worker/INFO] [xaero.minimap.XaeroMinimap/]: Loading Xaero's Minimap - Stage 2/2 (Server)
+[02Apr2026 08:34:27.853] [modloading-worker-0/INFO] [com.mrh0.createaddition.CreateAddition/]: Create Crafts & Additions Initialized!
+[02Apr2026 08:34:27.887] [modloading-worker-0/INFO] [snownee.jade.Jade/]: Start loading plugin from net.blay09.mods.balm.neoforge.compat.hudinfo.NeoForgeJadeModCompat
+[02Apr2026 08:34:27.892] [modloading-worker-0/INFO] [snownee.jade.Jade/]: Start loading plugin from de.maxhenkel.camera.integration.waila.PluginCamera
+[02Apr2026 08:34:27.892] [modloading-worker-0/INFO] [snownee.jade.Jade/]: Start loading plugin from com.tom.storagemod.jade.JadePlugin
+[02Apr2026 08:34:27.894] [modloading-worker-0/INFO] [snownee.jade.Jade/]: Start loading plugin from net.blay09.mods.waystones.compat.JadeIntegration
+[02Apr2026 08:34:27.894] [modloading-worker-0/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.vanilla.VanillaPlugin
+[02Apr2026 08:34:27.905] [modloading-worker-0/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.universal.UniversalPlugin
+[02Apr2026 08:34:27.908] [modloading-worker-0/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.debug.DebugPlugin
+[02Apr2026 08:34:27.909] [modloading-worker-0/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.core.CorePlugin
+[02Apr2026 08:34:27.909] [modloading-worker-0/INFO] [snownee.jade.Jade/]: Start loading plugin from snownee.jade.addon.access.AccessibilityPlugin
+[02Apr2026 08:34:27.909] [modloading-worker-0/INFO] [snownee.jade.Jade/]: Start loading plugin from de.maxhenkel.gravestone.integration.waila.PluginGraveStone
+[02Apr2026 08:34:27.910] [modloading-worker-0/INFO] [snownee.jade.Jade/]: Start loading plugin from net.geforcemods.securitycraft.compat.hudmods.JadeDataProvider
+[02Apr2026 08:34:27.911] [modloading-worker-0/INFO] [snownee.jade.Jade/]: Start loading plugin from noobanidus.mods.lootr.common.integration.jade.LootrWailaPlugin
+[02Apr2026 08:34:27.918] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mr_create_stones] Found status: OUTDATED Current: 2.0.1 Target: 2.0.1+mod
+[02Apr2026 08:34:27.918] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mcwdoors] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/doors.json
+[02Apr2026 08:34:27.962] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mcwdoors] Found status: AHEAD Current: 1.1.5 Target: null
+[02Apr2026 08:34:27.962] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [chipped] Starting version check at https://api.modrinth.com/updates/BAscRYKm/forge_updates.json
+[02Apr2026 08:34:28.077] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[02Apr2026 08:34:28.106] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/marcel/Documents/mcserwerpzdr/libraries/net/minecraft/server/1.21.1-20240808.144430/server-1.21.1-20240808.144430-srg.jar%23212!/assets/.mcassetsroot' uses unexpected schema
+[02Apr2026 08:34:28.107] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/home/marcel/Documents/mcserwerpzdr/libraries/net/minecraft/server/1.21.1-20240808.144430/server-1.21.1-20240808.144430-srg.jar%23212!/data/.mcassetsroot' uses unexpected schema
+[02Apr2026 08:34:28.127] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [chipped] Found status: BETA Current: 4.0.2 Target: null
+[02Apr2026 08:34:28.127] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mcwbridges] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/bridges.json
+[02Apr2026 08:34:28.175] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mcwbridges] Found status: AHEAD Current: 3.1.2 Target: null
+[02Apr2026 08:34:28.175] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mcwfences] Starting version check at https://raw.githubusercontent.com/sketchmacaw/macawsmods/master/fences.json
+[02Apr2026 08:34:28.219] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [mcwfences] Found status: UP_TO_DATE Current: 1.2.1 Target: null
+[02Apr2026 08:34:28.219] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [camera] Starting version check at https://update.maxhenkel.de/neoforge/camera
+[02Apr2026 08:34:28.422] [main/INFO] [com.simibubi.create.Create/]: Created 296 recipes which will be injected into the game
+[02Apr2026 08:34:28.428] [main/INFO] [com.simibubi.create.Create/]: Created 34 tags which will be injected into the game
+[02Apr2026 08:34:28.439] [main/INFO] [plus.dragons.createdragonsplus.data.runtime.RuntimePackResources/]: Starting provider [plus.dragons.createdragonsplus.data.internal.CDPRuntimeRecipeProvider@43d21ec0] for runtime resource [create_dragons_plus:runtime]
+[02Apr2026 08:34:28.444] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [camera] Found status: BETA Current: 1.21.1-1.0.21 Target: 1.21.1-1.0.21
+[02Apr2026 08:34:28.444] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [advancednetherite] Starting version check at https://raw.githubusercontent.com/Autovw/ModUpdates/master/advancednetherite/update.json
+[02Apr2026 08:34:28.463] [main/INFO] [plus.dragons.createdragonsplus.data.runtime.RuntimePackResources/]: plus.dragons.createdragonsplus.data.internal.CDPRuntimeRecipeProvider@43d21ec0 finished after 23 ms
+[02Apr2026 08:34:28.489] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [advancednetherite] Found status: BETA Current: 2.3.1 Target: 2.3.1
+[02Apr2026 08:34:28.489] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [toms_storage] Starting version check at https://raw.githubusercontent.com/tom5454/Toms-Storage/master/version-check-nf.json
+[02Apr2026 08:34:28.525] [main/INFO] [net.minecraft.server.MinecraftServer/]: Found new data pack create:dynamic_data, loading it automatically
+[02Apr2026 08:34:28.525] [main/INFO] [net.minecraft.server.MinecraftServer/]: Found new data pack create_dragons_plus:runtime, loading it automatically
+[02Apr2026 08:34:28.531] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [toms_storage] Found status: BETA Current: 2.3.0 Target: 2.3.0
+[02Apr2026 08:34:28.531] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [copycats] Starting version check at https://raw.githubusercontent.com/copycats-plus/copycats/multiloader/update.json
+[02Apr2026 08:34:28.575] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [copycats] Found status: AHEAD Current: 3.0.4+mc.1.21.1-neoforge Target: null
+[02Apr2026 08:34:28.575] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [clumps] Starting version check at https://updates.blamejared.com/get?n=clumps&gv=1.21.1&ml=neoforge
+[02Apr2026 08:34:28.834] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [clumps] Found status: BETA Current: 19.0.0.1 Target: 19.0.0.1
+[02Apr2026 08:34:28.834] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [travelersbackpack] Starting version check at https://gist.githubusercontent.com/Tiviacz1337/906937677aa472285dff9d6c2a189d5e/raw
+[02Apr2026 08:34:28.972] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [travelersbackpack] Found status: BETA Current: 10.1.33 Target: null
+[02Apr2026 08:34:28.972] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [voicechat] Starting version check at https://update.maxhenkel.de/neoforge/voicechat
+[02Apr2026 08:34:29.028] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [voicechat] Found status: BETA_OUTDATED Current: 1.21.1-2.6.12 Target: 1.21.1-2.6.14
+[02Apr2026 08:34:29.028] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [forgeconfigapiport] Starting version check at https://raw.githubusercontent.com/Fuzss/modresources/main/update/forgeconfigapiport.json
+[02Apr2026 08:34:29.070] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [forgeconfigapiport] Found status: OUTDATED Current: 21.1.1 Target: 21.1.6
+[02Apr2026 08:34:29.070] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [gravestone] Starting version check at https://update.maxhenkel.de/neoforge/gravestone
+[02Apr2026 08:34:29.123] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [gravestone] Found status: BETA Current: 1.21.1-1.0.35 Target: 1.21.1-1.0.35
+[02Apr2026 08:34:29.123] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [securitycraft] Starting version check at https://www.github.com/Geforce132/SecurityCraft/raw/master/Updates/Forge.json
+[02Apr2026 08:34:29.463] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [securitycraft] Found status: UP_TO_DATE Current: 1.10.1 Target: null
+[02Apr2026 08:34:29.463] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [createcontraptionterminals] Starting version check at https://raw.githubusercontent.com/tom5454/Create-Contraption-Terminals/main/version-check.json
+[02Apr2026 08:34:29.504] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [createcontraptionterminals] Found status: BETA_OUTDATED Current: 0.0NONE Target: 1.3.0
+[02Apr2026 08:34:29.504] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [create_power_loader] Starting version check at https://raw.githubusercontent.com/hlysine/create_power_loader/main/update.json
+[02Apr2026 08:34:29.543] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [create_power_loader] Found status: UP_TO_DATE Current: 2.0.3-mc1.21.1 Target: null
+[02Apr2026 08:34:29.575] [main/INFO] [net.minecraft.server.Main/]: No existing world data, creating new world
+[02Apr2026 08:34:30.445] [Worker-Main-3/WARN] [createliquidfuel/]: addReloadListeners called
+[02Apr2026 08:34:31.070] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe stones:mixing/dirt: com.google.gson.JsonParseException: Failed to parse either. First: No key amount in MapLike[{"item":"minecraft:dirt"}]; No key id in MapLike[{"item":"minecraft:dirt"}]; Second: Failed to parse either. First: No key id in MapLike[{"item":"minecraft:dirt"}]; Second: Failed to parse either. First: Not a JSON object: "minecraft:dirt"; Second: Compat cannot be deserialized
+[02Apr2026 08:34:31.090] [main/ERROR] [net.minecraft.world.item.crafting.RecipeManager/]: Parsing error loading recipe createdeco:placard: com.google.gson.JsonParseException: No key id in MapLike[{"item":"create:placard"}]
+[02Apr2026 08:34:31.243] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 8257 recipes
+[02Apr2026 08:34:31.641] [main/ERROR] [net.minecraft.advancements.AdvancementTree/]: Couldn't load advancements: [trainutilities:door_ingrediants, trainutilities:doors, trainutilities:incomplete_prototype_door]
+[02Apr2026 08:34:31.641] [main/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 6307 advancements
+[02Apr2026 08:34:31.647] [main/INFO] [net.swzo.brassworksmissions.BrassworksmissionsMod/]: Loaded 25 missions with a total weight of 100.0
+[02Apr2026 08:34:31.648] [main/INFO] [net.swzo.brassworksmissions.BrassworksmissionsMod/]: Loaded mission reward item: minecraft:diamond
+[02Apr2026 08:34:31.665] [main/INFO] [DragonLib/]: NOT FOUND
+[02Apr2026 08:34:32.054] [main/WARN] [ModernFix/]: Initial datapack load took 3.558 s
+[02Apr2026 08:34:32.716] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.21.1
+[02Apr2026 08:34:32.716] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[02Apr2026 08:34:32.716] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[02Apr2026 08:34:32.716] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[02Apr2026 08:34:32.847] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[02Apr2026 08:34:32.903] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
+[02Apr2026 08:34:32.944] [Server thread/INFO] [com.tom.storagemod.StorageMod/]: Loaded Tom's Simple Storage config file toms_storage-server.toml
+[02Apr2026 08:34:32.969] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:axolotl that was registered with AXOLOTLS mob category but was added under UNDERGROUND_WATER_CREATURE mob category for terralith:alpha_islands biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[02Apr2026 08:34:32.985] [Server thread/WARN] [net.neoforged.neoforge.server.ServerLifecycleHooks/]: Detected minecraft:axolotl that was registered with AXOLOTLS mob category but was added under UNDERGROUND_WATER_CREATURE mob category for terralith:fractured_savanna biome! Mobs should be added to biomes under the same mob category that the mob was registered as to prevent mob cap spawning issues.
+[02Apr2026 08:34:33.018] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.config.ConfigHandler/]: Initialising config for [DistantHorizons]
+[02Apr2026 08:34:33.065] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.config.ConfigHandler/]: [DistantHorizons] Config initialised
+[02Apr2026 08:34:33.074] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.config.eventHandlers.IgnoredDimensionCsvHandler/]: Dimension ignoring disabled, DH will render all dimensions.
+[02Apr2026 08:34:33.074] [Server thread/INFO] [com.seibel.distanthorizons.core.logging.DhLogger/]: Applying config to loggers
+[02Apr2026 08:34:33.074] [Server thread/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.AbstractModInitializer/]: Running Delayed setup...
+[02Apr2026 08:34:33.075] [Server thread/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.AbstractModInitializer/]: Delayed setup complete, firing DhApiAfterDhInitEvent event...
+[02Apr2026 08:34:33.087] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.jar.updater.SelfUpdater/]: Checking for Distant Horizons update
+[02Apr2026 08:34:33.450] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.jar.updater.SelfUpdater/]: Distant Horizons already up to date.
+[02Apr2026 08:34:33.450] [Server thread/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.AbstractModInitializer/]: Distant Horizons server Initialized at 
+[02Apr2026 08:34:33.453] [Server thread/INFO] [Better Archeology/]: Registering Villager Trades for Better Archeology
+[02Apr2026 08:34:33.461] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.world.AbstractDhWorld/]: Started [DhServerWorld] of type [SERVER_ONLY].
+[02Apr2026 08:34:33.464] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[02Apr2026 08:34:34.052] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0010-sqlite-createInitialDataTables.sql], for repo: [./world/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:34.082] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0020-sqlite-createFullDataSourceV2Tables.sql], for repo: [./world/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:34.109] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0030-sqlite-changeTableJournaling.sql], for repo: [./world/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:34.123] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0031-sqlite-useSqliteWalJournaling.sql], for repo: [./world/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:34.151] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0040-sqlite-removeRenderCache.sql], for repo: [./world/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:34.158] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0050-sqlite-addApplyToParentIndex.sql], for repo: [./world/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:34.164] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0060-sqlite-createChunkHashTable.sql], for repo: [./world/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:34.172] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0070-sqlite-createBeaconBeamTable.sql], for repo: [./world/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:34.186] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0080-sqlite-addApplyToChildrenColumn.sql], for repo: [./world/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:34.192] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0090-sqlite-addAdjacentFullDataColumns.sql], for repo: [./world/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:34.239] [DH-Full Data Migration Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.V2.DataMigratorV1/]: No migration necessary.
+[02Apr2026 08:34:34.248] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Started DhServerLevel for [Wrapped{ServerLevel[world]@minecraft:overworld}] at [[LocalSaveStructure@(./world/data)]].
+[02Apr2026 08:34:34.286] [Server thread/WARN] [mixin/]: Method overwrite conflict for removeIf in lithium.mixins.json:collections.chunk_tickets.SortedArraySetMixin from mod lithium, previously written by org.embeddedt.modernfix.common.mixin.bugfix.paper_chunk_patches.SortedArraySetMixin. Skipping method.
+[02Apr2026 08:34:34.290] [DH-Request Module Ticker [minecraft:overworld] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.BatchGenerator/]: Batch Chunk Generator initialized
+[02Apr2026 08:34:34.313] [DH-Request Module Ticker [minecraft:overworld] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Creating world gen queue
+[02Apr2026 08:34:34.314] [DH-Request Module Ticker [minecraft:overworld] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Created world gen queue
+[02Apr2026 08:34:34.320] [DH-Request Module Ticker [minecraft:overworld] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.GeneratedFullDataSourceProvider/]: Set world gen queue for level [minecraft:overworld].
+[02Apr2026 08:34:41.555] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0010-sqlite-createInitialDataTables.sql], for repo: [./world/DIM1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.578] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0020-sqlite-createFullDataSourceV2Tables.sql], for repo: [./world/DIM1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.600] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0030-sqlite-changeTableJournaling.sql], for repo: [./world/DIM1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.614] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0031-sqlite-useSqliteWalJournaling.sql], for repo: [./world/DIM1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.630] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0040-sqlite-removeRenderCache.sql], for repo: [./world/DIM1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.636] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0050-sqlite-addApplyToParentIndex.sql], for repo: [./world/DIM1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.642] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0060-sqlite-createChunkHashTable.sql], for repo: [./world/DIM1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.648] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0070-sqlite-createBeaconBeamTable.sql], for repo: [./world/DIM1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.654] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0080-sqlite-addApplyToChildrenColumn.sql], for repo: [./world/DIM1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.660] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0090-sqlite-addAdjacentFullDataColumns.sql], for repo: [./world/DIM1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.672] [DH-Full Data Migration Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.V2.DataMigratorV1/]: No migration necessary.
+[02Apr2026 08:34:41.678] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Started DhServerLevel for [Wrapped{ServerLevel[world]@minecraft:the_end}] at [[LocalSaveStructure@(./world/DIM1/data;./world/data)]].
+[02Apr2026 08:34:41.692] [DH-Request Module Ticker [minecraft:the_end] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.BatchGenerator/]: Batch Chunk Generator initialized
+[02Apr2026 08:34:41.692] [DH-Request Module Ticker [minecraft:the_end] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Creating world gen queue
+[02Apr2026 08:34:41.692] [DH-Request Module Ticker [minecraft:the_end] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Created world gen queue
+[02Apr2026 08:34:41.692] [DH-Request Module Ticker [minecraft:the_end] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.GeneratedFullDataSourceProvider/]: Set world gen queue for level [minecraft:the_end].
+[02Apr2026 08:34:41.699] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0010-sqlite-createInitialDataTables.sql], for repo: [./world/DIM-1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.721] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0020-sqlite-createFullDataSourceV2Tables.sql], for repo: [./world/DIM-1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.744] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0030-sqlite-changeTableJournaling.sql], for repo: [./world/DIM-1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.757] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0031-sqlite-useSqliteWalJournaling.sql], for repo: [./world/DIM-1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.774] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0040-sqlite-removeRenderCache.sql], for repo: [./world/DIM-1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.780] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0050-sqlite-addApplyToParentIndex.sql], for repo: [./world/DIM-1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.786] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0060-sqlite-createChunkHashTable.sql], for repo: [./world/DIM-1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.792] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0070-sqlite-createBeaconBeamTable.sql], for repo: [./world/DIM-1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.798] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0080-sqlite-addApplyToChildrenColumn.sql], for repo: [./world/DIM-1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.804] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.DatabaseUpdater/]: Running SQL update script: [sqlScripts/0090-sqlite-addAdjacentFullDataColumns.sql], for repo: [./world/DIM-1/data/DistantHorizons.sqlite]
+[02Apr2026 08:34:41.815] [DH-Full Data Migration Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.V2.DataMigratorV1/]: No migration necessary.
+[02Apr2026 08:34:41.822] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Started DhServerLevel for [Wrapped{ServerLevel[world]@minecraft:the_nether}] at [[LocalSaveStructure@(./world/DIM-1/data;./world/DIM1/data;./world/data)]].
+[02Apr2026 08:34:41.825] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[02Apr2026 08:34:41.835] [DH-Request Module Ticker [minecraft:the_nether] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.BatchGenerator/]: Batch Chunk Generator initialized
+[02Apr2026 08:34:41.835] [DH-Request Module Ticker [minecraft:the_nether] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Creating world gen queue
+[02Apr2026 08:34:41.836] [DH-Request Module Ticker [minecraft:the_nether] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Created world gen queue
+[02Apr2026 08:34:41.836] [DH-Request Module Ticker [minecraft:the_nether] Thread[0]/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.file.fullDatafile.GeneratedFullDataSourceProvider/]: Set world gen queue for level [minecraft:the_nether].
+[02Apr2026 08:34:41.848] [Worker-Main-9/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[02Apr2026 08:34:46.063] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[02Apr2026 08:34:46.064] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[02Apr2026 08:34:46.064] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[02Apr2026 08:34:46.064] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[02Apr2026 08:34:46.064] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[02Apr2026 08:34:46.065] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[02Apr2026 08:34:46.065] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[02Apr2026 08:34:46.065] [Worker-Main-10/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[02Apr2026 08:34:46.327] [Worker-Main-11/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[02Apr2026 08:34:46.863] [Worker-Main-12/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[02Apr2026 08:34:47.346] [Worker-Main-3/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[02Apr2026 08:34:47.832] [Worker-Main-1/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 2%
+[02Apr2026 08:34:48.351] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 18%
+[02Apr2026 08:34:48.842] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 18%
+[02Apr2026 08:34:49.336] [Worker-Main-2/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 18%
+[02Apr2026 08:34:49.852] [Worker-Main-15/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 28%
+[02Apr2026 08:34:50.350] [Worker-Main-15/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
+[02Apr2026 08:34:50.867] [Worker-Main-5/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
+[02Apr2026 08:34:51.340] [Worker-Main-14/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
+[02Apr2026 08:34:51.844] [Worker-Main-13/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 51%
+[02Apr2026 08:34:52.096] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 10270 ms
+[02Apr2026 08:34:52.096] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (19.156s)! For help, type "help"
+[02Apr2026 08:34:52.221] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[02Apr2026 08:34:52.249] [Advanced Display Data Manager/INFO] [de.mrjulsen.crn.CreateRailwaysNavigator/]: Advanced Display Data Manager has been started.
+[02Apr2026 08:34:52.250] [Server thread/INFO] [DragonLib Networking System/]: Creating network thread pool with 15 threads.
+[02Apr2026 08:34:52.250] [CRN Train Listener Launcher/INFO] [de.mrjulsen.crn.CreateRailwaysNavigator/]: Train listener has been started.
+[02Apr2026 08:34:52.271] [VoiceChatServerThread/INFO] [voicechat/]: [voicechat] Voice host is 'life-seems.gl.at.ply.gg:9938'
+[02Apr2026 08:34:52.272] [Server thread/WARN] [ModernFix/]: Dedicated server took 39.421 seconds to load
+[02Apr2026 08:34:52.272] [VoiceChatServerThread/INFO] [voicechat/]: [voicechat] Voice chat server started at port 24454
+[02Apr2026 08:34:55.806] [User Authenticator #1/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: UUID of player MarcelMu is c0710abf-94e9-47ca-a4f3-682a0395413a
+[02Apr2026 08:34:57.618] [Server thread/INFO] [net.minecraft.server.LoggedPrintStream/]: [STDOUT]: Lithium Cached BlockState Flags are disabled!
+[02Apr2026 08:34:57.632] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: MarcelMu[/[2a02:a31b:84a4:f880:1e1d:e4f9:b68d:5a9b]:51404] logged in with entity id 3 at (-4.5, 91.0, 6.5)
+[02Apr2026 08:34:57.681] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: MarcelMu joined the game
+[02Apr2026 08:34:57.694] [Server thread/INFO] [net.nicguzzo.wands.WandsMod/]: add_player wand
+[02Apr2026 08:34:57.712] [Server thread/INFO] [net.nicguzzo.wands.WandsMod/]: player_data {}
+[02Apr2026 08:34:57.721] [Server thread/INFO] [net.swzo.brassworksmissions.BrassworksmissionsMod/]: Weekly missions reset for player MarcelMu.
+[02Apr2026 08:34:57.739] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.api.internal.ServerApi/]: Player [MarcelMu] joined.
+[02Apr2026 08:34:57.772] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: MarcelMu has made the advancement [Brassworks Missions]
+[02Apr2026 08:34:58.346] [Server thread/INFO] [voicechat/]: [voicechat] Received secret request of MarcelMu (20)
+[02Apr2026 08:34:58.347] [Server thread/INFO] [voicechat/]: [voicechat] Sent secret to MarcelMu
+[02Apr2026 08:35:06.219] [DH-World Gen Thread[1]/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.wrappers.worldGeneration.mimicObject.DhLitWorldGenRegion/]: WorldGen requiring [minecraft:structure_references] is outside the expected range. Returning EMPTY chunk.
+[02Apr2026 08:35:09.840] [DH-World Gen Thread[12]/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.wrappers.worldGeneration.mimicObject.DhLitWorldGenRegion/]: WorldGen requiring [minecraft:structure_starts] is outside the expected range. Returning EMPTY chunk.
+[02Apr2026 08:35:09.898] [DH-World Gen Thread[11]/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.wrappers.worldGeneration.mimicObject.DhLitWorldGenRegion/]: WorldGen requiring [minecraft:structure_references] is outside the expected range. Returning EMPTY chunk.
+[02Apr2026 08:35:10.481] [DH-World Gen Thread[12]/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.wrappers.worldGeneration.mimicObject.DhLitWorldGenRegion/]: WorldGen requiring [minecraft:structure_starts] is outside the expected range. Returning EMPTY chunk.
+[02Apr2026 08:35:10.503] [DH-World Gen Thread[7]/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.wrappers.worldGeneration.mimicObject.DhLitWorldGenRegion/]: WorldGen requiring [minecraft:structure_references] is outside the expected range. Returning EMPTY chunk.
+[02Apr2026 08:35:10.584] [DH-World Gen Thread[12]/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.wrappers.worldGeneration.mimicObject.DhLitWorldGenRegion/]: WorldGen requiring [minecraft:structure_starts] is outside the expected range. Returning EMPTY chunk.
+[02Apr2026 08:35:10.614] [DH-World Gen Thread[13]/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.wrappers.worldGeneration.mimicObject.DhLitWorldGenRegion/]: WorldGen requiring [minecraft:structure_references] is outside the expected range. Returning EMPTY chunk.
+[02Apr2026 08:35:10.717] [DH-World Gen Thread[12]/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.wrappers.worldGeneration.mimicObject.DhLitWorldGenRegion/]: WorldGen requiring [minecraft:structure_starts] is outside the expected range. Returning EMPTY chunk.
+[02Apr2026 08:35:10.727] [DH-World Gen Thread[11]/INFO] [DistantHorizons-DistantHorizons-loaderCommon.neoforge.com.seibel.distanthorizons.common.wrappers.worldGeneration.mimicObject.DhLitWorldGenRegion/]: WorldGen requiring [minecraft:structure_references] is outside the expected range. Returning EMPTY chunk.
+[02Apr2026 08:35:11.002] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: MarcelMu lost connection: Disconnected
+[02Apr2026 08:35:11.003] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: MarcelMu left the game
+[02Apr2026 08:35:11.006] [Server thread/INFO] [net.nicguzzo.wands.WandsMod/]: remove player wand
+[02Apr2026 08:35:11.015] [Server thread/INFO] [voicechat/]: [voicechat] Disconnecting client MarcelMu
+[02Apr2026 08:35:11.016] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.api.internal.ServerApi/]: Player [MarcelMu] disconnected.
+[02Apr2026 08:35:33.682] [Server thread/INFO] [de.mrjulsen.crn.CreateRailwaysNavigator/]: Stopping train listener...
+[02Apr2026 08:35:33.682] [Server thread/INFO] [de.mrjulsen.crn.CreateRailwaysNavigator/]: Stopping Advanced Display Data Manager...
+[02Apr2026 08:35:33.682] [Server thread/INFO] [de.mrjulsen.crn.CreateRailwaysNavigator/]: All events have been closed.
+[02Apr2026 08:35:33.683] [Server thread/INFO] [DragonLib Networking System/]: Shutting down network threads. Please wait...
+[02Apr2026 08:35:33.683] [Server thread/INFO] [DragonLib Networking System/]: Network threads shut down. Took 0ms.
+[02Apr2026 08:35:33.686] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Closing world gen queue
+[02Apr2026 08:35:33.686] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Closing world gen queue
+[02Apr2026 08:35:33.686] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Closing world gen queue
+[02Apr2026 08:35:33.688] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Closing WorldGenerationQueue...
+[02Apr2026 08:35:33.688] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Closing WorldGenerationQueue...
+[02Apr2026 08:35:33.688] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Closing WorldGenerationQueue...
+[02Apr2026 08:35:33.688] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Shutting down world generator thread pool...
+[02Apr2026 08:35:33.688] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Shutting down world generator thread pool...
+[02Apr2026 08:35:33.688] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Shutting down world generator thread pool...
+[02Apr2026 08:35:33.688] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: World generator thread pool shutdown with [0] incomplete tasks.
+[02Apr2026 08:35:33.688] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: World generator thread pool shutdown with [0] incomplete tasks.
+[02Apr2026 08:35:33.688] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: World generator thread pool shutdown with [0] incomplete tasks.
+[02Apr2026 08:35:33.688] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.BatchGenerator/]: [BatchGenerator] shutting down...
+[02Apr2026 08:35:33.688] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.BatchGenerator/]: [BatchGenerator] shutting down...
+[02Apr2026 08:35:33.688] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.BatchGenerator/]: [BatchGenerator] shutting down...
+[02Apr2026 08:35:33.689] [level shutdown/INFO] [DistantHorizons-LOD World Gen/]: Closing [BatchGenerationEnvironment]
+[02Apr2026 08:35:33.689] [level shutdown/INFO] [DistantHorizons-LOD World Gen/]: Closing [BatchGenerationEnvironment]
+[02Apr2026 08:35:33.689] [level shutdown/INFO] [DistantHorizons-LOD World Gen/]: Closing [BatchGenerationEnvironment]
+[02Apr2026 08:35:33.689] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Finished closing WorldGenerationQueue
+[02Apr2026 08:35:33.689] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Finished closing WorldGenerationQueue
+[02Apr2026 08:35:33.689] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.generation.WorldGenerationQueue/]: Finished closing WorldGenerationQueue
+[02Apr2026 08:35:33.689] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[world]@minecraft:the_end}].
+[02Apr2026 08:35:33.689] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[world]@minecraft:the_nether}].
+[02Apr2026 08:35:33.689] [level shutdown/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.level.AbstractDhServerLevel/]: Closed DHLevel for [Wrapped{ServerLevel[world]@minecraft:overworld}].
+[02Apr2026 08:35:33.690] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.world.AbstractDhWorld/]: Closed DhWorld of type [SERVER_ONLY].
+[02Apr2026 08:35:33.690] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.world.AbstractDhWorld/]: Closed DhWorld of type [SERVER_ONLY].
+[02Apr2026 08:35:33.690] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.util.threading.PriorityTaskPicker/]: Shutting down PriorityTaskPicker thread pool...
+[02Apr2026 08:35:33.693] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.repo.AbstractDhRepo/]: Closing all [3] database connections...
+[02Apr2026 08:35:33.693] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.repo.AbstractDhRepo/]: Closing database connection: [jdbc:dh_sqlite:./world/DIM-1/data/DistantHorizons.sqlite]
+[02Apr2026 08:35:33.697] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.repo.AbstractDhRepo/]: Closing database connection: [jdbc:dh_sqlite:./world/data/DistantHorizons.sqlite]
+[02Apr2026 08:35:33.703] [Server thread/INFO] [DistantHorizons-DistantHorizons-com.seibel.distanthorizons.core.sql.repo.AbstractDhRepo/]: Closing database connection: [jdbc:dh_sqlite:./world/DIM1/data/DistantHorizons.sqlite]
+[02Apr2026 08:35:34.005] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[02Apr2026 08:35:34.006] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[02Apr2026 08:35:34.006] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[02Apr2026 08:35:34.295] [CRN Train Listener/INFO] [de.mrjulsen.crn.CreateRailwaysNavigator/]: Train listener has been stopped.
+[02Apr2026 08:35:34.324] [Advanced Display Data Manager/INFO] [de.mrjulsen.crn.CreateRailwaysNavigator/]: Advanced Display Data Manager has been stopped.
+[02Apr2026 08:35:38.267] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[02Apr2026 08:35:38.447] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_end
+[02Apr2026 08:35:38.453] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[world]'/minecraft:the_nether
+[02Apr2026 08:35:38.494] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[02Apr2026 08:35:38.494] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[02Apr2026 08:35:38.494] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[02Apr2026 08:35:38.494] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
